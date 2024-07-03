@@ -1,4 +1,4 @@
-This repository is meant for testing only. Do not use it!
+This repository is meant for testing only. Do not use it, please!
 
 # Terraform Provider Scaffolding (Terraform Plugin Framework)
 
