@@ -5,8 +5,8 @@ package provider
 
 import (
 	"context"
+	"fmt"
 	"net/http"
-    "fmt"
 
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/function"
@@ -86,7 +86,7 @@ func (p *ScaffoldingProvider) Functions(ctx context.Context) []func() function.F
 }
 
 func New(version string) func() provider.Provider {
-    fmt.Println("Create provider")
+	fmt.Println("Create provider")
 	return func() provider.Provider {
 		return &ScaffoldingProvider{
 			version: version,
